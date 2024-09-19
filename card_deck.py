@@ -3,6 +3,9 @@ import random
 
 
 class Card():
+    """
+    Class that handles Cards, 52 in deck
+    """
     def __init__(self, suit: str, rank: str):
         self.suit = suit
         self.rank = rank
