@@ -1,5 +1,6 @@
 from card_deck import *
 from constants import *
+import probabilities
 import visualizer
 import poker
 
@@ -7,9 +8,13 @@ def innitializeGame(NumberOfPlayers):
     deck = Deck()
     deck.shuffle()
     game = poker.PokerGame(NumberOfPlayers, deck)
+    """
+    card1, card2 = visualizer.requestHand(deck)
+    game.setHand(game.getSelf(), deck.dealCARD(card1), deck.dealCARD(card2))
+    visualizer.starting_table(game.players)"""
     game.setHand(game.getSelf(), deck.deal(), deck.deal())
-    visualizer.starting_table(game.players)
-    #game.fold(game.players[1], Card(CARD_SUITS[1], CARD_RANKS[3]), Card(CARD_SUITS[3], CARD_RANKS[3]))
+    print(game.getSelf().getHand())
+    probabilities.holeCards(game.getSelf().getHand())
 
 
 if __name__ == "__main__":

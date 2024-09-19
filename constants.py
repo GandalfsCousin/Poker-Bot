@@ -4,7 +4,8 @@ CARD_RANKS = [' 2', ' 3', ' 4', ' 5', ' 6', ' 7', ' 8', ' 9', '10', ' J', ' Q', 
 CARD_SUITS = ["Spades", "Clubs", "Hearts", "Diamonds"]
 CARD_COLOURS = {"Spades": "\033[94m", "Clubs": "\033[92m", "Hearts": "\033[91m", "Diamonds": "\033[93m"}
 
-HAND_RANKINGS = ["Royal Flush", "Straight Flush", "Four of a Kind", "Full House", "Flush", "Straight", "Three of a Kind", "Two Pair", "Pair", "High Card"]
+HAND_RANKINGS = ["Royal Flush", "Straight Flush", "Four of a Kind", "Full House", "Flush", "Straight",
+                 "Three of a Kind", "Two Pair", "Pair", "High Card"]
 
 """
 high card scores 2 -> ace :                                             1-13

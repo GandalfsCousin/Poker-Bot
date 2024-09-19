@@ -1,3 +1,5 @@
+from card_deck import *
+
 def welcome():
     print("     #==============================================#\n"
           "     ║                  POKER-BOT                   ║\n"
@@ -30,3 +32,35 @@ def starting_table(playerList):
           f"┃                                                          ┃\n"
           f"╿                        {playerList[0]}                        ╿\n"
           f"╰╼━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╾╯")
+
+
+def requestHand(deck: Deck):
+    print("ENTER HAND, FORMAT: SUIT|RANK\n"
+          "Example: Clubs|Q for Queen of Clubs")
+    card1Valid, card2Valid = False, False
+    Final1, Final2 = None, None
+    while not card1Valid:
+        try:
+            card1 = input("Card 1: ")
+            suit, rank = card1.split("|")
+            if rank != "10":
+                rank = " " + rank
+            Final1 = Card(suit, rank)
+            card1Valid = Final1 in deck.getDeck()
+        except:
+            print("Invalid Card")
+
+    while not card2Valid:
+        try:
+            card2 = input("Card 2: ")
+            suit, rank = card2.split("|")
+            if rank != "10":
+                rank = " " + rank
+            Final2 = Card(suit, rank)
+            card2Valid = Final2 in deck.getDeck() and Final1 != Final2
+        except:
+            print("Invalid Card")
+        else:
+            print("Invalid Card")
+
+    return Final1, Final2
