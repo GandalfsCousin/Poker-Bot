@@ -32,6 +32,7 @@ class Deck():
     def __init__(self):
         self.deck = [Card(suit, rank) for suit in constants.CARD_SUITS for rank in constants.CARD_RANKS]
 
+
     def shuffle(self):
         random.shuffle(self.deck)
 
