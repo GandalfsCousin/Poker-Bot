@@ -11,7 +11,7 @@ pair scores pair 2 -> pair ace:                                         14-26
 Two Pair scores: lowest 2 pair, 3 pair -> highest King pair, Ace pair:  29-51
 Just combine Pair results
 Thee of a kind three 2's -> 3 Aces:                                     52-64
-Straight, Lowest 2-6, Highest 10-ace off suit                           65-77
+Straight, highest card 2->ace                                           65-77
 Flush determined by highest card, 2 -> ace:                             78-90
 Full House: Highest 3 of a kind, 2-2-2 -> ace-ace-ace                   91-103    
 Four of a kind: 2-2-2 -> ace-ace-ace                                    104-116

@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92eeb023-2c92-4606-b29b-34e755064750" name="Changes" comment="Bulit-Up PokerGame Structure">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="92eeb023-2c92-4606-b29b-34e755064750" name="Changes" comment="Scoring System in constants.py">
       <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoring.py" beforeDir="false" afterPath="$PROJECT_DIR$/scoring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726714119361</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Scoring System in constants.py">
+      <option name="closed" value="true" />
+      <created>1726715395402</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726715395402</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +157,7 @@
     <MESSAGE value="README" />
     <MESSAGE value="More Frame" />
     <MESSAGE value="Bulit-Up PokerGame Structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bulit-Up PokerGame Structure" />
+    <MESSAGE value="Scoring System in constants.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scoring System in constants.py" />
   </component>
 </project>
