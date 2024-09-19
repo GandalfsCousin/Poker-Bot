@@ -13,11 +13,19 @@ class Card():
     def __repr__(self):
         return f"|{self.suit[0]}{self.rank}|"
 
+    def __eq__(self, other):
+        if self.getSuit() == other.getSuit() and self.getRank() == other.getRank():
+            return True
+        return False
+
     def getValue(self):
         return constants.CARD_VALUES[self.rank]
 
     def getRank(self):
         return self.rank
+
+    def getSuit(self):
+        return self.suit
 
 
 class Deck():
@@ -29,3 +37,9 @@ class Deck():
 
     def getDeck(self):
         return self.deck
+
+    def deal(self):
+        return self.deck.pop()
+
+    def removeCard(self, cardToRemove: Card):
+        self.deck.pop(self.deck.index(cardToRemove))
